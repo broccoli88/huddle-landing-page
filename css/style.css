@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap");
 
 :root {
-    --color-primary: hsl(322, 100%, 66%);
+    --color-pink: hsl(322, 100%, 66%);
     --color-pale-cyan: hsl(193, 100%, 96%);
     --color-dark-cyan: hsl(192, 100%, 9%);
     --color-grayish-blue: hsl(208, 11%, 55%);
@@ -29,7 +29,7 @@ html {
 }
 
 body {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     font-family: var(--font-standard);
     font-weight: var(--font-weight-400);
     color: var(--color-grayish-blue);
@@ -52,4 +52,63 @@ h1 {
 
 h2 {
     font-size: 3.1rem;
+}
+
+@media (min-width: 1440px) {
+    body {
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2.9rem;
+    }
+
+    h2 {
+        font-size: 2.1rem;
+    }
+}
+
+/* Buttons  */
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    display: inline-block;
+    padding: 1.5rem 0;
+    border-radius: 40px;
+    border: 0;
+    white-space: nowrap;
+    transition: all 0.2s;
+    box-shadow: 0 0 20px 0 hsl(192, 100%, 9%, 0.2);
+}
+
+.btn--pink {
+    background-color: var(--color-pink);
+    color: #fff;
+}
+
+.btn--white {
+    background-color: #fff;
+    color: var(--color-dark-cyan);
+}
+
+.btn--wide {
+    width: 80%;
+}
+
+.btn--medium {
+    width: 60%;
+}
+
+.btn--small {
+    padding: 0.8rem 4.5rem;
+}
+
+.btn:hover {
+    opacity: 0.5;
 }
