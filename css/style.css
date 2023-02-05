@@ -5,6 +5,7 @@
     --color-pale-cyan: hsl(193, 100%, 96%);
     --color-dark-cyan: hsl(192, 100%, 9%);
     --color-grayish-blue: hsl(208, 11%, 55%);
+    --color-box-shadow: hsl(192, 100%, 9%, 0.2);
 
     --font-headings: "Poppins", sans-serif;
     --font-standard: "Open Sans", sans-serif;
@@ -84,7 +85,7 @@ a {
     border: 0;
     white-space: nowrap;
     transition: all 0.2s;
-    box-shadow: 0 0 20px 0 hsl(192, 100%, 9%, 0.2);
+    box-shadow: 0 0 20px 0 var(--color-box-shadow);
 }
 
 .btn--pink {
@@ -111,4 +112,51 @@ a {
 
 .btn:hover {
     opacity: 0.5;
+}
+
+/* Card */
+
+.card {
+    margin: 2rem;
+    padding: 12rem 8rem 7rem;
+    /* border: 2px solid black; */
+    border-radius: 30px;
+    box-shadow: 0 0 20px var(--color-box-shadow);
+}
+
+.card__img-container {
+    margin-bottom: 10rem;
+}
+
+.icon {
+    width: 500px;
+    height: 400px;
+}
+
+.card__heading {
+    margin-bottom: 3.6rem;
+}
+
+@media (min-width: 1440px) {
+    .icon {
+        width: 450px;
+        height: 375px;
+    }
+
+    .card {
+        display: flex;
+        gap: 20rem;
+        align-items: center;
+
+        padding: 5.5rem 3rem 5.5rem 11.5rem;
+    }
+
+    .card__img-container {
+        order: 2;
+    }
+
+    .card__heading,
+    .card__description {
+        text-align: left;
+    }
 }
