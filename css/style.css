@@ -5,7 +5,7 @@
     --color-pale-cyan: hsl(193, 100%, 96%);
     --color-dark-cyan: hsl(192, 100%, 9%);
     --color-grayish-blue: hsl(208, 11%, 55%);
-    --color-box-shadow: hsl(192, 100%, 9%, 0.2);
+    --box-shadow: 0 0 20px 0 hsl(192, 100%, 9%, 0.2);
 
     --font-headings: "Poppins", sans-serif;
     --font-standard: "Open Sans", sans-serif;
@@ -85,7 +85,7 @@ a {
     border: 0;
     white-space: nowrap;
     transition: all 0.2s;
-    box-shadow: 0 0 20px 0 var(--color-box-shadow);
+    box-shadow: var(--box-shadow);
 }
 
 .btn--pink {
@@ -103,7 +103,7 @@ a {
 }
 
 .btn--medium {
-    width: 60%;
+    width: 50%;
 }
 
 .btn--small {
@@ -121,7 +121,7 @@ a {
     padding: 12rem 8rem 7rem;
     /* border: 2px solid black; */
     border-radius: 30px;
-    box-shadow: 0 0 20px var(--color-box-shadow);
+    box-shadow: var(--box-shadow);
 }
 
 .card__img-container {
@@ -178,5 +178,26 @@ a {
 @media (min-width: 1440px) {
     .header-nav {
         padding-inline: 7.5rem;
+    }
+}
+
+/* CTA */
+
+.cta {
+    margin: 0 auto;
+    padding-block: 8rem;
+    box-shadow: var(--box-shadow);
+    border-radius: 25px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.cta__heading {
+    margin-bottom: 5rem;
+}
+
+@media (min-width: 1440px) {
+    .cta__heading {
+        font-size: 2.9rem;
     }
 }
