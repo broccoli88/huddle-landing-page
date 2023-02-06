@@ -160,3 +160,23 @@ a {
         text-align: left;
     }
 }
+
+/* Header */
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4.5rem 3rem;
+}
+
+.header-nav .icon {
+    width: 21rem;
+    height: 6rem;
+}
+
+@media (min-width: 1440px) {
+    .header-nav {
+        padding-inline: 7.5rem;
+    }
+}
