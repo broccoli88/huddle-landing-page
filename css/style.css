@@ -72,3 +72,61 @@ h3 {
         font-size: 3rem;
     }
 }
+
+/* Buttons */
+
+.btn {
+    background-color: transparent;
+    border-radius: 40px;
+    border: 0;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    font-weight: var(--font-weight-600);
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-transform: capitalize;
+    white-space: nowrap;
+}
+
+.btn:hover {
+    opacity: 0.6;
+}
+
+.btn--large,
+.btn--medium {
+    padding: 2.5rem 5em;
+}
+
+.btn--large {
+    font-size: 2.2rem;
+}
+
+.btn--medium {
+    font-size: 1.8rem;
+}
+
+.btn--small {
+    padding: 1.5rem 5rem;
+    font-size: 2rem;
+}
+
+.btn--pink {
+    background-color: var(--color-pink);
+    color: var(--color-pale-cyan);
+}
+
+.btn--white {
+    color: var(--color-dark-cyan);
+}
+
+@media (min-width: 1440px) {
+    .btn--large {
+        font-size: 1.3rem;
+        padding: 2.2rem 5.5em;
+    }
+
+    .btn--small {
+        font-size: 1.4rem;
+        padding-inline: 6rem;
+    }
+}
