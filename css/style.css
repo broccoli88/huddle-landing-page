@@ -47,8 +47,8 @@ h3 {
 }
 
 h1 {
-    margin: 0;
     font-size: 4.3rem;
+    margin-bottom: 3.5rem;
 }
 
 h2 {
@@ -122,6 +122,7 @@ h3 {
 
 .btn--white {
     color: var(--color-dark-cyan);
+    background-color: #fff;
 }
 
 @media (min-width: 1440px) {
@@ -181,5 +182,65 @@ h3 {
 
     .card__image-container {
         order: 2;
+    }
+}
+
+/* Hero */
+
+.hero {
+    background-color: var(--color-pale-cyan);
+    background-image: url(../images/bg-hero-mobile.svg);
+}
+
+.hero__container {
+    text-align: center;
+    color: var(--color-dark-cyan);
+    padding: 8rem;
+}
+
+.hero__description {
+    margin-bottom: 5rem;
+}
+
+.hero__image-container {
+    margin-top: 12rem;
+}
+
+.hero__image {
+    width: 100%;
+}
+
+@media (min-width: 1440px) {
+    .hero__container {
+        text-align: left;
+        align-items: center;
+    }
+
+    .hero__container.grid {
+        grid-template-columns: 35% 1fr;
+        gap: 8rem;
+    }
+
+    .hero__image-container {
+        margin-top: 0;
+    }
+}
+
+/* Top cta */
+
+.top-cta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 2rem;
+}
+
+.top-cta__image {
+    width: 220px;
+}
+
+@media (min-width: 1440px) {
+    .top-cta__image {
+        width: 200px;
     }
 }
